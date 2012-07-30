@@ -122,12 +122,13 @@ $skc: #e6e6e6;
                 height: 80px;
                 margin: 0 0 20px;
                 cursor: pointer;
+                clear: both;
                 .nav-icon-img {
                     width: 40px;
                     height: 40px;
                     margin: 10px auto 0;
                     overflow: hidden;
-                    background-image: url(../images/icons.png;);
+                    background-image: url(../images/icons.png);
                     background-size: 240px;
                 }
                 .nav-icon-text {
