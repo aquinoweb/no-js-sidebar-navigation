@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>No JS side-nav by nayan suthar</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/screen.css" />
+  </head>
+
+  <body width="100%" height="100%">
+
+    <div class="phone-container">
+      <div class="phone-body">
+        <div class="phone-speaker"></div>
+        <div class="phone-button"></div>
+
+        <div class="iPhone-screen-container">
+
+          <!--main-website-inside-iphone-->
+          <div class="website-wrapper">
+
+            <!-----------nav--------------->
+            <div class="nav-container" id="nav-box">
+              <a class="goto-page-touch"href="#page-box"></a>
+              <div class="nav-content-wrapper">
+                <div class="nav-left-half">
+                  <a href="#page-box">
+                    <div id="icon1" class="nav-icon-wrapper">
+                      <div class="nav-icon-img"></div>
+                      <span class="nav-icon-text">web</span>
+                    </div>
+                  </a>
+
+                  <a href="#page-box">
+                    <div id="icon3" class="nav-icon-wrapper">
+                      <div class="nav-icon-img"></div>
+                      <span class="nav-icon-text">map</span>
+                    </div>
+                  </a>
+
+                  <a href="#page-box">
+                    <div id="icon5" class="nav-icon-wrapper">
+                      <div class="nav-icon-img"></div>
+                      <span class="nav-icon-text">log out</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div  class="nav-right-half">
+                  <a href="#page-box">
+                    <div id="icon2" class="nav-icon-wrapper selected">
+                      <div class="nav-icon-img"></div>
+                      <span class="nav-icon-text">images</span>
+                    </div>
+                  </a>
+
+                  <a href="#page-box">
+                    <div id="icon4" class="nav-icon-wrapper">
+                      <div class="nav-icon-img"></div>
+                      <span class="nav-icon-text">settings</span>
+                    </div>
+                  </a>
+
+                  <a href="#page-box">
+                    <div id="icon6" class="nav-icon-wrapper">
+                      <div class="nav-icon-img"></div>
+                      <span class="nav-icon-text">Exit</span>
+                    </div>
+                  </a>
+
+
+                </div>
+              </div>
+            </div>
+
+            <!------------page----------->
+            <div class="page-container">
+              <div class="custom-scroll-bar"></div>
+
+              <div class="page-header-wrapper">
+                <a class="goto-nav-touch"href="#nav-box">
+                  <div class="menu-icon-line"></div>
+                  <div class="menu-icon-line mid"></div>
+                  <div class="menu-icon-line"></div>
+                </a>
+                <span class="header-text">FOOGLE</span>
+              </div>
+
+              <div class="page-content-wrapper" id="page-box">
+                <!---------page-content-start-------------->
+                <!-----the-content-can-be-added-using-js-according-to-the-button-clicked-from-nav-->
+                <div class="search-box">
+                  <input class="search-input" type="text" placeholder="Search"/>
+                </div>
+                <div class="loading-img">
+                  <div class="loading-inner-circle"></div>
+                </div>
+                <span class="loading-text">loading...</span>
+                <p class="content-text-p">
+                  Here is a nice sidebar navigation manu without java-script (try clicking the menu button on top left). <br/>And a nice animated
+                  loading image with only css.
+                  The default scroll bar is hidden. the only js needed is to position and resize
+                  the custom=scroll-bar.<br/><br/>
+
+                  /* <br/>The content inside the .page-content-wrapper
+                  can be loaded dynamically according to option selected etc.
+                  <br/>*/<br/><br/>
+
+                  fork on github.<br/><br/>
+
+                  follow me on twitter.
+
+                </p>
+                    <!--------page-content-end------->
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </body>
+
+</html>
