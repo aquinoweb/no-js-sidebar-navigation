@@ -63,7 +63,7 @@ $skc: #e6e6e6;
     width: 200%;
     height: 100%;
     position: relative;
-    @include perspective(400px);
+    @include perspective(400);
 
 
     //---------------nav-styling------------------
