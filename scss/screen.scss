@@ -78,7 +78,7 @@ $skc: #e6e6e6;
         background: #252525;
         position: relative;
         z-index: 1;
-        @include transition(width, 0.5s);
+        @include transition(width 0.5s);
         .goto-page-touch {
             display: none;
             width: 40px;
@@ -102,7 +102,7 @@ $skc: #e6e6e6;
                 padding: 40px 26px;
                 position: absolute;
                 top: 0;
-                @include transition(transform, 0.5s);
+                @include transition(transform 0.5s);
                 background: #e6e6e6;
             }
             .nav-left-half {
@@ -116,6 +116,7 @@ $skc: #e6e6e6;
                 right: 0;
                 @include apply-origin(100%, 0%);
                 @include rotateY(-90deg);
+                background: #a6a6a6 !important;
             }
             .nav-icon-wrapper {
                 width: 60px;
@@ -143,6 +144,9 @@ $skc: #e6e6e6;
                     .nav-icon-img {
                         background-image: url(../images/icons-color.png);
                     }
+                    .nav-icon-text {
+                        color: #52abde;
+                    }
                 }
             }
             #icon1 .nav-icon-img{background-position: 0px;}
@@ -160,15 +164,14 @@ $skc: #e6e6e6;
         &:target {
             z-index: 3;
             width: 50%;
-            @include transition(width, 0.5s);
+            @include transition(width 0.5s);
             .goto-page-touch {
                 display: block;
             }
             .nav-content-wrapper {
                 .nav-left-half, .nav-right-half {
                     width: 51%;
-                    @include transition(transform, 0.5s);
-                    @include transition(width, 0s, 0.5s);
+                    @include transition(transform 0.5s, width 0s ease 0.4s);
                     @include rotateY(0deg);
                 }
             }
